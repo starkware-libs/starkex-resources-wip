@@ -1,5 +1,10 @@
 cmake_minimum_required (VERSION 3.5)
 
+include("cmake_utils/exe_rules.cmake")
+include("cmake_utils/copy_rules.cmake")
+include("cmake_utils/python_rules.cmake")
+include("cmake_utils/pip_rules.cmake")
+
 macro(copy_files_target TARGET_NAME)
 set(OUTPUT_FILES)
 foreach(FILENAME ${ARGN})
